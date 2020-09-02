@@ -1,8 +1,14 @@
+
 .App {
   text-align: center;
   margin: 20px;
 }
-
+@media (max-width: 300px) {
+  .search-bar {
+    width: 50px;
+  /* Fix this section of the searchbar */
+  }
+}
 .search-bar {
   /* height: 30px;
   widows: 100%;
@@ -11,10 +17,10 @@
   border-bottom-left-radius: 30px;  
   border-color: pink;
   height: auto;
-  width: 350px;
-  z-index: 2;
+  width: 100px;
   box-shadow: 0 10px 20px -2px gray;
   padding: 12px 35px;
+  margin-top: 20px;
 }
 .search-button {
   /* height: 30px;
@@ -27,8 +33,43 @@
   box-shadow: 0 10px 20px -2px gray;
   padding: 12px 35px;
   font-weight: 700;
+  position: relative;
+
 }
 
 .search-button:hover{
   background-color: rgb(235, 161, 173);
+}
+.search-form {
+  min-height: 10hv;
+}
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.head-title {
+  color: pink;
+}
+.head-paragraph {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 320px) {
+    /* .search-button {
+      border-radius: 30px;
+    }
+    .search-bar{
+      border-radius: 30px;
+    } */
+    .App {
+      margin-left: 20px;
+      margin-right: auto;
+    }
 }

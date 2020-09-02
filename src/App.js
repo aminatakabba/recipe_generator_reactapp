@@ -37,11 +37,16 @@ const App = () => {
   return (
     <div className="App">
       <form className="search-form" onSubmit={getSearch}>
-        
+        <div className="head">
+          <h1 className="head-title">Welcome to Random Recipe Generator </h1>
+          <p className="head-paragraph">Looking fore healthy and nutricious recipes? You are in the correct place, <strong>Random Recipe Generator</strong> allows you to find the best recipes and gives you the exact calories for each meal.</p>
         <div className="search">
           <input type="text" className="search-bar" value={search} onChange={upadateSearch}/>
           <button  type="submit" className="search-button">Search</button>
         </div>
+        </div>
+      </form>
+      <div className="recipes">
         {recipes.map(recipe => (
           <Recipe 
             key={recipe.recipe.label}
@@ -50,7 +55,7 @@ const App = () => {
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}/>
         ))}
-      </form>
+      </div>
     </div>
   )
 }
