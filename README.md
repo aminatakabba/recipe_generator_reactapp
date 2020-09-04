@@ -1,5 +1,8 @@
 <h1>Random Recipe Generator React App & Edamame API</h1>
 <p>This is a React Application that uses the Free Edamame API to find healthy recipies. When users search for recipes the app renders 10 of the top recipes that match the name, it gives the name, quanities of the ingredients and the calories that each contain.</p>
+<a href="">Deployed App</a>
+<h3>Technologies used:</h3>
+<p>HTML, CSS, JavaScript, React, Edamame API and Firebase</p>
 <img src="src/img/screens.jpg" alt="Recipe Generator App in different screen sizes">
 <img src="src/img/rand_recipe_generator_iphone.png" alt="Recipe Generator in different screen sizes">
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
